@@ -1,0 +1,200 @@
+@import url(./reset.css);
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://i.pinimg.com/originals/f0/38/fb/f038fb9101aa4e7693ef42d52d1297de.jpg');
+}
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: max(108rem);
+    height: 50rem;
+    border-radius: 15px;
+    background-color: rgb(231, 226, 226); 
+    color: #2b2a2a;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-picture {
+    align-items: center; 
+    font-size: 50px;
+    width: 100px; 
+    height: 100px; 
+    object-fit: contain;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.logo-text{
+    font-size: 20px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #0d2a43;
+}
+
+.logo-picture , .user-info-div {
+    width: 20%;
+}
+
+.logo-picture , .user-info-div , .header-options {
+    line-height: 100%;
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.logo-part {
+    display: flex;
+    margin-left: 20px;
+}
+
+input, textarea {
+    background-color: #e6e2e2;
+    color:#0d2a43;
+    overflow: hidden;
+}
+
+textarea{
+    height: 60%;
+    resize: none;
+}
+
+/* inside container */
+
+.left-panel {
+    flex-basis: 25%;
+    overflow-y: none;
+    overflow-x: hidden;
+    width: 27rem; 
+    height: 100%;
+    color: red;
+    background-color: #d3d3d3;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.left-panel::-webkit-scrollbar {
+    width: 0;  /* Hide scrollbar */
+}
+
+.right-panel {
+    background-color: #e6e2e2;
+    width: 81rem;
+    height: 100%;
+    flex-basis: 75%;
+    position: relative; 
+    border-radius: 0 15px 15px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-button{
+    border-color: #0d2a43;
+    border-radius: 7px; 
+    border: 2px solid #0d2a43; 
+    background-color: #0d2a43; 
+    color: #d3d3d3; 
+    width: 45%;
+    padding: 5px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 20px;
+    margin-bottom: 10px;
+    cursor: pointer; 
+    transition-duration: 0.4s;
+}
+
+.create-button:hover {
+    background-color: #d3d3d3; 
+    color: #0d2a43; 
+}
+
+.solid-line{
+    border-top: 1px solid #0d2a43;
+    margin: 10px 0 ;
+}
+
+.save-button{
+    border-radius: 7px; 
+    border: 1px solid #d3d3d3; 
+    background-color: #0d2a43; 
+    color: #d3d3d3; 
+    width: 10%;
+    padding: 5px 20px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 0 20px; */
+    position:absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer; 
+    transition-duration: 0.4s;
+}
+
+.save-button:hover {
+    background-color: #d3d3d3; 
+    color: #0d2a43; 
+    border: 1px solid #0d2a43; 
+}
+
+.notes-list-container{
+    width: 100%; 
+  
+    height: auto;
+    color: #0d2a43;
+    background-color: #d3d3d3;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.note-button {
+    width:100%;
+    margin-right: 10px;
+    padding: 3px 15px;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 15px 15px 0;
+    font-size: 20px;
+
+}
+
+.note-button:hover {
+    background-color: #c2c0c0;
+}
+
+.note-button img.delete-button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
